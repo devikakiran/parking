@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Parking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🚗 Smart Parking</h1>
+
+  <div class="container">
+    <h2>Available Parking Spots</h2>
+    <div id="spots"></div>
+
+    <h2>Book a Spot (Entry)</h2>
+    <input type="text" id="vehicleNumber" placeholder="Vehicle Number">
+    <button onclick="bookSpot()">Book Spot</button>
+
+    <h2>Exit Parking</h2>
+    <input type="text" id="exitVehicle" placeholder="Vehicle Number">
+    <button onclick="exitParking()">Exit & Pay</button>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
