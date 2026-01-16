@@ -1,37 +1,77 @@
-Smart Parking Management System (QR-Based)
+#  Smart Parking System
 
-A simple web-based parking management system that tracks free and occupied parking spots using a QR code workflow.
+A simple **Smart Parking System** built using **HTML, CSS, and JavaScript**, designed for beginners and mini-projects. It simulates parking spot booking, vehicle entry/exit, and fare calculation using the browser's **localStorage**.
 
-Problem Statement
+---
 
-In malls and parking areas, users waste time searching for free parking spots, while operators rely on manual or expensive sensor-based systems.
+## 📌 Features
 
-Solution
+* View available parking spots in real time
+* Book a parking spot (vehicle entry)
+* Exit parking with automatic fare calculation
+* **QR code based entry access to the website**
+* **QR code based exit for quick billing and checkout**
+* Parking data stored using `localStorage`
+* Simple and clean UI
 
-This system uses a QR code-based entry and exit flow to:
+---
 
-Track parking availability
+##  Technologies Used
 
-Allocate the next free spot
+* **HTML5** – Structure of the web page
+* **CSS3** – Styling (via `style.css`)
+* **JavaScript (Vanilla JS)** – Logic and functionality
+* **LocalStorage** – To store parking data persistently
+* **Google Maps Platform (API)** – To display parking location and nearby parking spots (Hackathon Feature)
 
-Calculate parking duration and fare
+## ⚙️ How It Works
 
-Free the spot when the vehicle exits
+* Total parking spots are fixed (`TOTAL_SPOTS = 5`)
+* Each spot can be either **free** or **occupied**
+* **At Entry:**
 
-All data is handled using browser localStorage, simulating a database.
+  * User scans a **QR code at the parking entrance**
+  * QR redirects to the parking web application
+  * Vehicle number is entered and a free spot is assigned
+  * Entry time is recorded automatically
+* **At Exit:**
 
-Features
+  * User scans a **QR code at the exit gate**
+  * Vehicle number is verified
+  * Parking duration and fare are calculated
+  * Spot is freed after payment
 
-📍 Live parking spot availability
+>  **Rate:** ₹2 per minute
 
-🟢 Automatic assignment of next free spot
 
-🚫 Prevents double booking
+---
 
-⏱️ Calculates parking duration
+##  Usage Instructions
 
-💰 Displays parking fare
+### ➤ Entry (QR-Based Access)
 
-🔄 Frees spot on exit
+1. Scan the **QR code placed at the parking entrance**
+2. The QR code redirects the user to the Smart Parking web application
+3. Enter the vehicle number
+4. Click **Book Spot**
+5. A free parking spot is assigned and entry time is recorded
 
-📱 QR-code friendly (same page for entry & exit)
+### ➤ Exit (QR-Based Checkout)
+
+1. Scan the **QR code placed at the parking exit**
+2. Enter the same vehicle number used during entry
+3. Click **Exit & Pay**
+4. Parking duration and total fare are displayed
+5. The parking spot is marked as free again
+
+---
+
+
+
+
+
+
+
+
+
+
